@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cricket - IND v PAK !</title>
+    <script language="javascript">
+        function Al() {
+            alert("Click on the Logos in the Bottom 4 Frames to Visit Their Website.")
+        }
+        document.addEventListener("keydown",function(e) {
+            e.preventDefault();
+        });
+    </script>
+</head>
+<frameset id="brd" cols="1*,2*" bordercolor="cyan" onload="Al()">
+    <frame name="f1" src="ProjF1.html" noresize>
+    <frameset rows="2*,1*">
+        <frameset cols="1*,2*">
+            <frame name="f2" src="ProjF2.html" noresize>
+            <frame name="f3" src="ProjF3.html" noresize>
+        </frameset>
+        <frameset cols="1*,1*,1*,1*">  
+            <frame name="f4" src="ProjF4.html" noresize>
+            <frame name="f5" src="ProjF5.html" noresize>
+            <frame name="f6" src="ProjF6.html" noresize>
+            <frame name="f7" src="ProjF7.html" noresize>
+        </frameset>
+    </frameset>
+</frameset>
+</html>

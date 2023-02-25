@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cricket - IND v PAK ! (EndFrame-III)</title>
+    <style>
+        img {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            transform: translate(-50%, -50%);
+            box-shadow: 0px 0px 10px cyan;
+            animation: fade-in 1.25s ease-out 1.5s both;
+        }
+        #pC {
+            box-shadow: 0px 0px 10px yellowgreen;
+        }
+        @keyframes fade-in {
+            from {
+                opacity: 0;
+            } to {
+                opacity: 1;
+            }
+        }
+    </style>
+    <script language="javascript">
+        function showC() {
+            var x=sessionStorage.getItem("WiNNeR");
+            if (x=="i") {
+                document.getElementById("iC").style="display:100%";
+            } else if (x=="p") {
+                document.getElementById("bd").style.backgroundColor="darkgreen";
+                document.getElementById("pC").style="display:100%";
+            }
+        }
+    </script>
+</head>
+<body id="bd" bgcolor="midnightblue" onload="showC()">
+    <center>
+        <abbr title="CHAMPIONS!">
+            <img id="iC" src="indC.jpg" style="display: none;">
+            <img id="pC" src="pakC.jpg" style="display: none;">
+        </abbr>
+    </center>
+</body>
+</html>

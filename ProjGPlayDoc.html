@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cricket - IND v PAK !</title>
+        <script src="ProjGPlayExt.js"></script>
+        <link rel="stylesheet" type="text/css" href="ProjGPExtCSS.css">
+    </head>
+    <body id="bd" onload="batDef()">
+        <div id="blk" class="blk" onclick="hideOut()"></div>
+        <center>
+        <table cellpadding="7" border="0">
+            <tr><td height="40" width="40"></td>
+                <td height="40" width="40"></td>
+                <td colspan="6" rowspan="4">
+                    <input id="r0" name="runs" type="radio" value="0" style="display: none;" checked>
+                    <img id="img0" class="r" src="def0img.jpg" title="Defend the Ball!" alt="Defensive Shot" onclick="r0on()" height="160" width="240" checked>
+                </td>
+                <td height="40" width="40"></td>
+                <td height="40" width="40"></td>
+                <td height="40" width="40"></td>
+                <td height="40" width="40"></td>
+                <td height="40" width="40"></td>
+                <td height="40" width="40"></td>
+                <td height="40" width="40"></td>
+                <td colspan="6" rowspan="4">
+                    <input id="r6" name="runs" type="radio" value="6" style="display: none;">
+                    <img id="img6" class="r" src="run6img.jpg" title="Hit a SIX!" alt="Six Runs Shot" onclick="r6on()" height="160" width="240">
+                </td>
+                <td height="40" width="40"></td>
+                <td height="40" width="40"></td>
+            </tr>
+            <tr>
+                <td height="40" width="40"></td>
+                <td height="40" width="40"></td>
+                <td height="40" width="40"></td>
+                
+                <td height="40" width="40"></td>
+                <td align="center" valign="top" colspan="3" rowspan="2">
+                    <button id="sh" onclick="bpbScore()">*PLAY* SHOT !</button>
+                </td>
+                <td height="40" width="40"></td>
+                
+                <td height="40" width="40"></td>
+                <td height="40" width="40"></td>
+                <td height="40" width="40"></td>
+            </tr>
+            <tr>
+                <td height="40" width="40"></td>
+                <td height="40" width="40"></td>
+                <td height="40" width="40"></td>
+                
+                <td height="40" width="40"></td>
+                <td height="40" width="40"></td>
+                
+                <td height="40" width="40"></td>
+                <td height="40" width="40"></td>
+                <td height="40" width="40"></td>
+            </tr>
+            <tr>
+            </tr>
+            <tr><td height="40" width="40"></td>
+
+                <td colspan="6" rowspan="4">
+                    <input id="r1" name="runs" type="radio" value="1" style="display: none;">
+                    <img id="img1" class="r" src="run1img.jpg" title="Take a Single . " alt="Single Run Shot" onclick="r1on()" height="160" width="240">
+                </td>
+                <td height="40" width="40"></td>
+
+                <td rowspan="4" colspan="7" valign="top">
+                    <div id="scont">
+                        <img id="score" src="sc.jpg">
+                        <div id="batScore">0-0</div>
+                        <div id="overCount">0.0</div>
+                        <div id="targetData">TARGET LOADING...</div>
+                    </div>
+                </td>
+                
+                <td height="40" width="40"></td>
+
+                <td colspan="6" rowspan="4">
+                    <input id="r4" name="runs" type="radio" value="4" style="display: none;">
+                    <img id="img4" class="r" src="run4img.jpg" title="Hit a FOUR!" alt="Four Runs Shot" onclick="r4on()" height="160" width="240">
+                </td>
+
+                <td height="40" width="40"></td>
+            </tr>
+            <tr>
+                <td height="40" width="40"></td>
+
+                <td height="40" width="40"></td>
+                <td height="40" width="40"></td>
+                
+                <td height="40" width="40"></td>
+            </tr>
+            <tr>
+                <td height="40" width="40"></td>
+
+                <td height="40" width="40"></td>
+                <td height="40" width="40"></td>
+
+                <td height="40" width="40"></td>
+            </tr>
+            <tr>
+            </tr>
+            <tr>
+                <td colspan="6" rowspan="4">
+                    <input id="r2" name="runs" type="radio" value="2" style="display: none;">
+                    <img id="img2" class="r" src="run2img.jpg" title="Take a Double . . " alt="Double Run Shot" onclick="r2on()" height="160" width="240">
+                </td>
+                <td height="40" width="40"></td>
+                
+                <td colspan="9" rowspan="3">
+                    <div id="ballPlay">
+                        <div id="curBat">
+                            <img id="indBatter" class="batter" src="klr.jpg" style="display: none;">
+                            <div id="curBatScore" style="display: none;"></div>
+                        </div>
+                        <div id="divBall">
+                            <img id="ball" src="whiteball.png" style="display: none;">
+                        </div>
+                        <div id="bowl">
+                            <img id="bowler1" src="pkba1.jpg" style="display: none;">
+                            <img id="bowler2" src="pkba2.jpg" style="display: none;">
+                            <div id="curBowlerScore" style="display: none;"></div>
+                        </div>
+                    </div>
+                </td>
+
+                <td height="40" width="40"></td>
+                <td colspan="6" rowspan="4">
+                    <input id="r3" name="runs" type="radio" value="3" style="display: none;">
+                    <img id="img3" class="r" src="run3img.jpg" title="Take a Triple . . . " alt="Triple Run Shot" onclick="r3on()" height="160" width="240">
+            </tr>
+            <tr>
+                <td height="40" width="40"></td>
+                <td height="40" width="40"></td>
+            </tr>
+            <tr>
+                <td height="40" width="40"></td>
+                <td height="40" width="40"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>
+                    <img id="out1" class="out" src="out1.jpg" style="display:none" onclick="hideOut()" height="450" width="800" border="5">
+                    <img id="out2" class="out" src="out2.jpg" style="display:none" onclick="hideOut()" height="450" width="800" border="5">
+                    <img id="out3" class="out" src="out3.jpg" style="display:none" onclick="hideOut()" height="450" width="800" border="5">
+                    <img id="r500" class="celeb" src="r50.jpg" style="display:none" onclick="hideCel()" height="450" width="800" border="5">
+                    <img id="r1000" class="celeb" src="r100.jpg" style="display:none" onclick="hideCel()" height="450" width="800" border="5">
+                    <img id="r1500" class="celeb" src="r50pp.jpg" style="display:none" onclick="hideCel()" height="450" width="800" border="5">
+                    <img id="r2000" class="celeb" src="r100pp.jpg" style="display:none" onclick="hideCel()" height="450" width="800" border="5">
+                    <img id="r2500" class="celeb" src="r100pp.jpg" style="display:none" onclick="hideCel()" height="450" width="800" border="5">
+                    <img id="iWin1" class="over" src="indwin1.jpg" style="display:none" onclick="showIW2()" height="500" width="650" border="5">
+                    <img id="iWin2" class="over" src="indwin2.jpg" style="display:none" onclick="gameOver()" height="450" width="800" border="5">
+                    <img id="pWin" class="over" src="pkwin.jpg" style="display:none" onclick="gameOver()" height="450" width="800" border="5">
+                    <img id="gOver" class="over" src="gameover.jpg" style="display:none" onclick="end()" height="450" width="800" border="5">
+                </td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+        </center>
+    </body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cricket - IND v PAK !</title>
+    <script src="ProjGPrePlayExt.js"></script>
+    <link rel="stylesheet" type="text/css" href="ProjGPrePlayExtCSS.css">
+</head>
+<body id="bd" background="vioStdium.jpg" onload="showMtch()">
+    <center>
+    <div id="lateAp">
+        <img id="img1" src="bMatch1.jpg" width="1550" height="500" style="display: none;">
+        <img id="img2" src="bMatch2.jpg" width="889" height="500" style="display: none;">
+        <img id="img3" src="bMatch3.jpg" width="711" height="500" style="display: none;">
+        <button id="pBtn" class="play-btn" style="display: none;" onclick="rul()">PLAY</button>
+    </div>
+    <table id="aTab" bgcolor="black" cellpadding="30" style="display: none;">
+        <colgroup>
+            <col width="889">
+        </colgroup>
+        <tr>
+            <td height="475" valign="top">
+                <h3 id="rulhead">Before the Game Begins . . .</h3><hr>
+                <p>
+                    <ol id="olrl">
+                        <li id="pt1">This Game is a Target-Chasing Cricket Game. You will be Given a Target that you have to Chase while Keeping Wickets as well as Overs in Hand.</li>
+                        <br>
+                        <li id="pt2">Game Scenario: It's a Classic IND v PAK "Arch Rivals" Match. The Stadium is Full of Crowd. The Prestigous CHAMPIONS TROPHY Title is on the Line. Pakistan had won the Toss and Decided to Bat First. They have Managed to Score a Respectable Total as per the Pitch Conditions. Now, You have to Step Down in the Shoes of the Indian Batsmen and Win the Match.</li>
+                        <br>
+                        <li id="pt3">The Game Mechanics involve the Simulation of the "Hand Cricket" Game. While Batting, if the Bowler's Input and Batter's Input in the form of Runs is Same, then the Batter is OUT, otherwise the Batter gains his Total Runs from his Inputs.</li>
+                    </ol>
+                </p>
+                <button id="proBtn" class="play-btn" style="display: none;" onclick="proc1()">PROCEED</button>
+            </td>
+        </tr>
+    </table>
+    <table id="bTab" bgcolor="black" cellpadding="20" style="display: none;">
+        <colgroup>
+            <col width="375">
+        </colgroup>
+        <tr>
+            <td><center>Select Difficulty Level</center></td>
+        </tr> 
+        <tr>
+            <td>
+                <div id="btn-cid" class="btn-cont" style="display: none;"> 
+                    <button id="l1" class="b" title="1-Star Player Mode">EASY</button>
+                    <button id="l2" class="b" title="2-Star Player Mode">MODERATE</button>
+                    <button id="l3" class="b" title="3-Star Player Mode">HARD</button>
+                    <button id="l4" class="b" title="In This Level, You won't be Able to See Bowler's Input to Read the Algorithm . . ."> EXPERT </button>
+                </div>
+            </td>
+        </tr>
+    </table>
+    <table id="cTab" bgcolor="black" cellpadding="20" style="display: none;">
+        <tr>
+            <td valign="top" align="center" id="InnCh">
+                Summary of First Innings . . . 
+            </td>
+        </tr>
+    </table>
+    <div id="soII">
+        <div id="pakTR" style="display: none;"></div>
+        <div id="pakOv" style="display: none;">20.0</div>
+        <div id="indTR" style="display: none;">0-0</div>
+        <div id="indOv" style="display: none;">0.0</div>
+        <div id="RPOnTgT" style="display: none;"></div>
+        <img id="inni1" class="piSum" src="inni1.jpg" height="450" width="750" style="display: none;" onclick="inn12()">
+        <img id="inni2" class="piSum" src="inni2.jpg" height="450" width="750" style="display: none;" onclick="inn23()">
+        <img id="inni3" class="piSum" src="inni3.jpg" height="450" width="700" style="display: none;" onclick="inn34()">
+        <img id="inni4" class="piSum" src="inni4.jpg" height="450" width="800" style="display: none;" onclick="inn45()">
+        <img id="inni5" class="piSum" src="inni5midSc.jpg" height="400" width="375" style="display: none;" onclick="inn56()">
+        <img id="inni6" class="piSum" src="inni6.jpg" height="450" width="800" style="display: none;" onclick="innF()">
+    </div>
+    </center>
+</body>
+</html>

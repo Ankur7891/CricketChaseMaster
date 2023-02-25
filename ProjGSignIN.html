@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cricket - IND v PAK !</title>
+    <script src="ProjGSignINExt.js"></script>
+    <link rel="stylesheet" type="text/css" href="ProjGSignINExtCSS.css">
+</head>
+<body id="bd" background="signinNstart.jpg">
+    <div id="btn-cid" class="form" style="display: 100%">
+        <table id="ftab" bgcolor="cyan" cellpadding="20"> 
+            <tr>
+                <td>
+                    <form action="post" onsubmit="return SICheck()">
+                        <label id="un1">User Name</label>
+                        <br>
+                        <input id="un2" type="text" size="32">
+                        <br>
+                        <label id="psw1">Password</label>
+                        <br>
+                        <input id="psw2" type="password" size="32">
+                        <br>
+                        <label id="dob1">Date of Birth</label>
+                        <br>
+                        <input id="dob2" type="date" value="2000-01-01" required>
+                        <br>
+                        <label id="sb1">Country</label>
+                        <br>
+                        <select id="sb2">
+                            <option value="0">Select Your Country</option>
+                            <option value="i">India</option>
+                            <option value="p">Pakistan</option>
+                            <option value="a">Afghanistan</option>
+                            <option value="c">China</option>
+                            <option value="s">Sri Lanka</option>
+                            <option value="b">Bangladesh</option>
+                            <option value="n">Nepal</option>
+                        </select>
+                        <br>
+                        <label id="yonid">Have You Played this Game Before?</label>
+                        <br>
+                        <input type="radio" name="yon" value="y">
+                        <label>YES</label>
+                        <input type="radio" name="yon" value="n" checked>
+                        <label>NO</label>
+                        <br>
+                        <label id="hob1">What are Your Hobbies in Sports?</label>
+                        <br>
+                        <input type="checkbox" name="hob" value="c" checked>
+                        <label>Cricket</label>
+                        <input type="checkbox" name="hob" value="f">
+                        <label>Football</label>
+                        <input type="checkbox" name="hob" value="h">
+                        <label>Hockey</label>
+                        <br><hr>
+                        <input id="res" type="reset" value="RESET">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input id="sub" type="submit" value="SIGN IN">
+                    </form>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

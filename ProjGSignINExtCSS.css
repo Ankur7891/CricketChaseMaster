@@ -1,0 +1,79 @@
+body {
+    width: 1125px;
+    height: 600px;
+    background-image: url("signinNstart.jpg");
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: darkgreen;
+    border: 10px thick black;
+    box-shadow: 0px 0px 10px black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: midnightblue;
+    margin: auto;
+}
+#ftab {
+    position: absolute;
+    right: 160px; 
+    top: 25px;
+    box-shadow: 0px 0px 10px darkblue;
+    border-radius: 10px;
+    animation: fade-in 0.75s ease-in forwards;
+    text-align: left;
+    font-size: 22.5px;
+}
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    } to {
+        opacity: 1;
+    }
+}
+
+#res,#sub {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    padding: 10px;
+    background-color: midnightblue; 
+    color: cyan;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px black;
+    height: 47px;
+}
+#res:hover,#sub:hover {
+    background-color: darkred;
+    color: yellow;
+}
+#un1,#un2,#psw1,#psw2,#dob1,#dob2,#sb1,#sb2,#yonid,#hob1,#res,#sub {
+    margin: 10px;
+}
+#sb2 {
+    box-sizing: larger;
+}
+input {
+    font-size: 20px;
+    border-radius: 3px;
+    border-color: darkblue;
+    margin: 3px;
+    height: 25px;
+}
+input[type=radio] {
+    margin-top: 5px;
+    margin-left: 15px;
+    width: 18px;
+    height: 18px;
+}
+input[type=checkbox] {
+    margin-top: 5px;
+    margin-left: 15px;
+    width: 18px;
+    height: 18px;
+}
+
+select {
+    font-size: 20px;
+    padding: 3px;
+    border-radius: 3px;
+    border-color: darkblue;
+    height: 33px;
+}

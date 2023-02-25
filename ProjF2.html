@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cricket - IND v PAK ! (EndFrame-II)</title>
+    <style>
+        img {
+            position: absolute;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            box-shadow: 0px 0px 10px cyan;
+            animation: fade-in 1.25s ease-out 0.75s both;
+        }
+        #pPOM {
+            box-shadow: 0px 0px 10px yellowgreen;
+        }
+        @keyframes fade-in {
+            from {
+                opacity: 0;
+            } to {
+                opacity: 1;
+            }
+        }
+        .i {
+            position: absolute;
+            color: midnightblue;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 20px;
+            right: 10%;
+            top: 84.6%;
+            animation: fade-in 1s ease-out 0.75s both;
+        }
+        .p {
+            position: absolute;
+            color: darkgreen;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 20px;
+            right: 10%;
+            top: 84.6%;
+            animation: fade-in 1s ease-out 0.75s both;
+        }
+    </style>
+    <script language="javascript">
+        function showPOM() {
+            var x=sessionStorage.getItem("WiNNeR");
+            if (x=="i") {
+                document.getElementById("iPOM").style="display:100%";
+                pom();
+            } else if (x=="p") {
+                document.getElementById("bd").style.backgroundColor="darkgreen";
+                document.getElementById("pPOM").style="display:100%";
+                var z=sessionStorage.getItem("Zee");
+                document.getElementById(z).style="display:100%";
+            }
+        }
+        function pom() {
+            var y=sessionStorage.getItem("iPoM");
+            document.getElementById(Number(y)+1).style="display:100%";
+        }
+    </script>
+</head>
+<body id="bd" bgcolor="midnightblue" onload="showPOM()">
+    <center>
+        <abbr title="Player of the Match Award Winner">
+            <img id="iPOM" src="iMOM.jpg" height="320" width="240" style="display: none;" border="2">
+            <img id="pPOM" src="pMOM.jpg" height="320" width="240" style="display: none;" border="2">
+        </abbr>
+        <div id="soFM"> 
+            <div id="11" class="p" style="display: none;">S. AFRIDI</div>
+            <div id="12" class="p" style="display: none;">B. AZAM</div>
+            <div id="13" class="p" style="display: none;">M. RIZWAN</div>
+            <div id="14" class="p" style="display: none;">A. ALI</div>
+            <div id="15" class="p" style="display: none;">N. SHAH</div>
+            
+            <div id="1" class="i" style="display: none;">K.L. RAHUL</div>
+            <div id="2" class="i" style="display: none;">R. SHARMA</div>
+            <div id="3" class="i" style="display: none;">V. KOHLI</div>
+            <div id="4" class="i" style="display: none;">S.K. YADAV</div>
+            <div id="5" class="i" style="display: none;">H. PANDYA</div>
+            <div id="6" class="i" style="display: none;">D. KARTHIK</div>
+            <div id="7" class="i" style="display: none;">A. PATEL</div>
+            <div id="8" class="i" style="display: none;">R. ASHWIN</div>
+            <div id="9" class="i" style="display: none;">B. KUMAR</div>
+            <div id="10" class="i" style="display: none;">M. SHAMI</div>
+        </div>
+    </center>
+</body>
+</html>

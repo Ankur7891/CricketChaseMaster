@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cricket - IND v PAK ! (EndFrame-I)</title>
+    <style>
+        body {
+            background-position: center -200px;
+            background-repeat: no-repeat;
+            background-color: midnightblue;
+            overflow: hidden;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-weight: 100;
+        }
+        img {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            transform: translate(-50%, -50%);
+            animation: fade-in 1s ease-out both;
+        }
+        @keyframes fade-in {
+            from {
+                opacity: 0;
+            } to {
+                opacity: 1;
+            }
+        }
+        #iSc {
+            box-shadow: 0px 0px 20px blue, 0px 0px 40px red, 0px 0px 60px black;
+        }
+        #pSc {
+            box-shadow: 0px 0px 20px red, 0px 0px 40px blue, 0px 0px 60px black;
+        }
+        .sc {
+            z-index: 1;
+            position: absolute;
+            right: 4%;
+            animation: fade-in 0.5s ease-out 0.75s both;
+        }
+        #indOv {
+            top: 69%;
+            font-size:40px;
+            color: midnightblue;
+        }
+        #pakOv {
+            top: 43.1%;
+            font-size:40px;
+            color: darkgreen;
+        }
+        #indTR {
+            top: 56%;
+            font-size:50px;
+            color: cyan;
+        }
+        #pakTR {
+            top: 30%;
+            font-size:50px;
+            color: yellow;
+        }
+        #res {
+            top: 78.8%;
+            left: 4%;
+            font-size: 30px;
+            color: midnightblue;
+        }
+    </style>
+    <script language="javascript">
+        function showMS() {
+            var x=sessionStorage.getItem("WiNNeR");
+            if (x=="i") {
+                document.getElementById("iSc").style="display:100%";
+            } else if (x=="p") {
+                document.getElementById("pSc").style="display:100%";
+            }
+            var PakR=Number(sessionStorage.getItem("PakTotalRuns"));
+            var PakW=Number(sessionStorage.getItem("PaKWiC"));
+            document.getElementById("pakTR").innerHTML=PakR+"-"+PakW;
+            document.getElementById("pakTR").style="display:100%";
+            document.getElementById("pakOv").style="display:100%";
+            
+            var IndR=sessionStorage.getItem("IndTotalRuns");
+            var IndW=sessionStorage.getItem("InDWiC");
+            document.getElementById("indTR").innerHTML=IndR+"-"+IndW;
+            document.getElementById("indTR").style="display:100%";
+
+            var l=sessionStorage.getItem("InDBaLL");
+            var ov=Math.floor(l/6);
+            var ovd=l%6;
+        
+            document.getElementById("indOv").innerHTML=ov+"."+ovd;
+            document.getElementById("indOv").style="display:100%";
+
+            var tgt=sessionStorage.getItem("TarGet");
+            if (PakR>IndR) {
+                if (IndR==tgt-2) {
+                    document.getElementById("res").innerHTML="LOST BY "+(PakR-IndR)+" RUN!";
+                } else {
+                    document.getElementById("res").innerHTML="LOST BY "+(PakR-IndR)+" RUNS!";
+                }
+            } else if (IndR>PakR) {
+                if (IndW==9) {
+                    document.getElementById("res").innerHTML="WON BY "+(10-IndW)+" WICKET!";
+                } else {
+                    document.getElementById("res").innerHTML="WON BY "+(10-IndW)+" WICKETS!";
+                }
+            }
+            document.getElementById("res").style="display:100%";
+        }
+    </script>
+</head>
+<body background="vioStdium.jpg" onload="showMS()">
+    <center>
+        <abbr title="Final Result">
+            <img id="iSc" src="inniFullSC.jpg" style="display: none;">
+            <img id="pSc" src="inniFullSC.jpg" style="display: none;">
+        </abbr>
+        <div id="soFM"> 
+            <div id="pakTR" class="sc" style="display: none;"></div>
+            <div id="pakOv" class="sc" style="display: none;">20.0</div>
+            <div id="indTR" class="sc" style="display: none;"></div>
+            <div id="indOv" class="sc" style="display: none;"></div>
+            <div id="res" class="sc" style="display: none;"></div>
+        </div>
+    </center>
+</body>
+</html>

@@ -1,0 +1,259 @@
+body {
+    position: relative;
+    background-position: center -120px;
+    background-repeat: repeat;
+    background-size: cover;
+    background-color: black;
+    box-shadow: 0px 0px 20px black;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+
+#img1 {
+    position: absolute;
+    left: -50px;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    top: 40px;
+    box-shadow: 0px 0px 20px black;
+    background-attachment: fixed;
+    animation: puff-in-c 1.25s ease-out 1s alternate both;
+}
+#img2 {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    top: 40px;
+    box-shadow: 0px 0px 20px black;
+    background-attachment: fixed;
+    animation: puff-in-c 1.25s ease-out 3s alternate both;
+}
+#img3 {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    top: 40px;
+    box-shadow: 0px 0px 20px black;
+    background-attachment: fixed;
+    animation: puff-in-c 1.25s ease-out 8s alternate both;
+}
+@keyframes puff-in-c {
+    0% {
+        transform: scale(2);
+        filter: blur(5px);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        filter: blur(0px);
+        opacity: 1;
+    }
+}
+.play-btn {
+    position: absolute;
+    top: 465px;
+    left: 0;
+    right: 0;
+    margin-left: 165px;
+    margin-right: 165px;
+    display: block;
+    padding: 5px 10px;
+    font-size: 35px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    color: yellow;
+    background-color: maroon;
+    border-radius: 30px;
+    box-shadow: 0px 0px 10px black;
+    cursor: pointer;
+    animation: puff-in-c 1.25s ease-out 9s alternate both;
+}
+.play-btn:hover {
+    color: cyan;
+    background-color: midnightblue;
+}
+#proBtn {
+    top: 450px;;
+    animation: puff-in-c 1.25s ease-out alternate both;
+}
+#aTab {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    top: 25px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    font-weight: lighter;
+    color: yellow;
+    box-shadow: 0px 0px 20px red, 0px 0px 40px blue, 0px 0px 60px black;
+    border-radius: 7px;
+    animation: fade-in 1s forwards;
+}
+
+#bTab {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    top: 50px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 30px;
+    color: yellow;
+    box-shadow: 0px 0px 20px black;
+    border-radius: 10px;
+    animation: fade-in 1s forwards;
+}
+.btn-cont {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    box-shadow: 0px 0px 15px black;
+    animation: fade-in 2s forwards;
+}
+.b {
+    width: 200px;
+    height: 50px;
+    border-radius: 7px;
+    margin: 15px 0px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 30px;
+    font-weight: bolder;
+    background-color: yellow;
+    color: black;
+    box-shadow: 0px 0px 5px black;
+    cursor: pointer;
+}
+.b:hover {
+    background-color: cyan;
+    color: midnightblue;
+}
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+#cTab {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 582.5px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 30px;
+    color: yellow;
+    box-shadow: 0px 0px 20px greenyellow, 0px 0px 40px yellow;
+    border-radius: 10px;
+    animation: fade-in 1s forwards;
+}
+
+#soII {
+    position: relative;
+}
+
+.piSum {
+    cursor: pointer;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    top: 90px;
+    border-radius: 10px;
+    border: 10px thick black;
+    box-shadow: 0px 0px 15px green, 0px 0px 30px cyan;
+    animation: fade-in 0.5s forwards;
+}
+#inni5 {
+    box-shadow: 0px 0px 10px black, 0px 0px 15px greenyellow;
+    top: 105px;
+    animation: puff-in-c 0.75s ease-out alternate both;
+}
+
+#pakTR {
+    position: absolute;
+    cursor: pointer;
+    z-index: 1;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 100;
+    font-size: 50px;
+    top: 182.5px;
+    right: 462.5px;
+    color: yellow;
+    animation: fade-in 0.5s 1.25s both;
+}
+#pakOv {
+    position: absolute;
+    cursor: pointer;
+    z-index: 1;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 100;
+    font-size: 40px;
+    top: 250px;
+    right: 462.5px;
+    color: darkgreen;
+    animation: fade-in 0.5s 1.25s both;
+}
+#indTR {
+    position: absolute;
+    cursor: pointer;
+    z-index: 1;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 100;
+    font-size: 50px;
+    top: 317.5px;
+    right: 462.5px;
+    color: cyan;
+    animation: fade-in 0.5s 1.25s both;
+}
+#indOv {
+    position: absolute;
+    cursor: pointer;
+    z-index: 1;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 100;
+    font-size: 40px;
+    top: 384px;
+    right: 462.5px;
+    color: darkblue;
+    animation: fade-in 0.5s 1.25s both;
+}
+#RPOnTgT {
+    position: absolute;
+    cursor: pointer;
+    z-index: 1;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 100;
+    font-size: 27.5px;
+    top: 439px;
+    left: 455px;
+    color: black;
+    animation: fade-in 0.5s 1.25s both;
+}
+
+#inni6 {
+    box-shadow: 0px 0px 15px midnightblue, 0px 0px 30px blue;
+}
