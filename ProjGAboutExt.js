@@ -8,5 +8,5 @@ function colUnCh() {
     document.getElementById("okBtn").style="color: black; background-color: yellow";
 }
 function gBack() {
-    location.replace("Index.html");
+    location.replace("index.html");
 }
